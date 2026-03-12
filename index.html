@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Tools | Indie Dev Generators & Idea Tools</title>
+  <meta name="description" content="Game Tools is a sleek hub of indie game development generators and creative tools for enemies, quests, loot, levels, factions, and more.">
+  <meta name="theme-color" content="#0b1020">
+  <meta property="og:title" content="Game Tools | Indie Dev Generators & Idea Tools">
+  <meta property="og:description" content="A sleek indie-dev toolbox with generators for enemies, quests, loot, level ideas, factions, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/media/game-tools-hero.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="hero shell">
+      <div class="hero-card">
+        <img
+          class="hero-image"
+          src="/media/game-tools-hero.png"
+          alt="Game Tools hero banner"
+        >
+        <div class="hero-overlay"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Indie dev toolbox</p>
+          <h1>Fast tools for building weird, cool games.</h1>
+          <p class="hero-text">
+            Generators, prompts, and idea tools for enemies, quests, loot, factions, levels, and more.
+            Built for solo devs, jams, prototypes, and chaotic late-night inspiration.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#tools-grid">Open tools</a>
+            <a class="btn btn-secondary" href="#updates">Latest updates</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="updates" class="updates shell">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Fresh stuff</p>
+          <h2>Latest updates</h2>
+        </div>
+        <div class="slider-controls" aria-label="Slideshow controls">
+          <button class="slider-btn" id="updates-prev" type="button" aria-label="Previous slide">‹</button>
+          <button class="slider-btn" id="updates-next" type="button" aria-label="Next slide">›</button>
+        </div>
+      </div>
+
+      <div class="updates-slider" aria-roledescription="carousel">
+        <article class="update-slide is-active">
+          <span class="update-tag">NEW</span>
+          <h3>Enemy Generator v1</h3>
+          <p>Generate enemy archetypes, combat gimmicks, weaknesses, and behavior hooks in one click.</p>
+          <a href="#tools-grid" class="text-link">Explore tool</a>
+        </article>
+
+        <article class="update-slide">
+          <span class="update-tag">HOT</span>
+          <h3>Quest Maker</h3>
+          <p>Spin up quick mission structures for RPGs, horror prototypes, top-down action games, and jam builds.</p>
+          <a href="#tools-grid" class="text-link">Explore tool</a>
+        </article>
+
+        <article class="update-slide">
+          <span class="update-tag">BETA</span>
+          <h3>Level Idea Cards</h3>
+          <p>Get location concepts, mood hooks, hazards, and set-piece prompts for your next map or encounter.</p>
+          <a href="#tools-grid" class="text-link">Explore tool</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="tools shell" id="tools-grid">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Core tools</p>
+          <h2>Tool grid</h2>
+        </div>
+        <p class="section-note">Start with generators that help you unblock ideas fast and turn them into prototypes.</p>
+      </div>
+
+      <div class="tool-grid">
+        <article class="tool-card featured">
+          <p class="tool-type">Generator</p>
+          <h3>Enemy Generator</h3>
+          <p>Build enemy concepts from type, theme, behavior, weakness, and combat gimmick.</p>
+          <a href="#" class="card-link">Open tool</a>
+        </article>
+
+        <article class="tool-card">
+          <p class="tool-type">Generator</p>
+          <h3>Quest Maker</h3>
+          <p>Create mission hooks, objectives, threats, and rewards for RPGs and action games.</p>
+          <a href="#" class="card-link">Open tool</a>
+        </article>
+
+        <article class="tool-card">
+          <p class="tool-type">Generator</p>
+          <h3>Loot Generator</h3>
+          <p>Roll weapon names, item stats, rarity vibes, and flavor text for drops and rewards.</p>
+          <a href="#" class="card-link">Open tool</a>
+        </article>
+
+        <article class="tool-card">
+          <p class="tool-type">Ideas</p>
+          <h3>Level Idea Cards</h3>
+          <p>Generate map concepts, mood prompts, hazards, and scene hooks for new environments.</p>
+          <a href="#" class="card-link">Open tool</a>
+        </article>
+
+        <article class="tool-card">
+          <p class="tool-type">Worldbuilding</p>
+          <h3>Faction Generator</h3>
+          <p>Create groups with motives, aesthetics, territory, hierarchy, and internal conflict.</p>
+          <a href="#" class="card-link">Open tool</a>
+        </article>
+
+        <article class="tool-card">
+          <p class="tool-type">Boss Design</p>
+          <h3>Boss Fight Generator</h3>
+          <p>Mix phases, arena gimmicks, attack patterns, and cinematic hooks into a boss concept.</p>
+          <a href="#" class="card-link">Open tool</a>
+        </article>
+
+        <article class="tool-card">
+          <p class="tool-type">Narrative</p>
+          <h3>Dialogue Prompt Tool</h3>
+          <p>Generate short dialogue setups for companions, villains, NPC banter, or cutscene tension.</p>
+          <a href="#" class="card-link">Open tool</a>
+        </article>
+
+        <article class="tool-card">
+          <p class="tool-type">Puzzle</p>
+          <h3>Puzzle Seed Generator</h3>
+          <p>Get logic puzzle concepts, interactions, and environmental clues for adventure and horror games.</p>
+          <a href="#" class="card-link">Open tool</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script>
+    async function loadPartial(targetId, path, fallbackHtml) {
+      const target = document.getElementById(targetId);
+      if (!target) return;
+
+      try {
+        const res = await fetch(path, { cache: 'no-store' });
+        if (!res.ok) throw new Error('Missing partial');
+        target.innerHTML = await res.text();
+      } catch (err) {
+        target.innerHTML = fallbackHtml;
+      }
+    }
+
+    loadPartial(
+      'site-header',
+      'partials/header.html',
+      `
+      <header class="site-header">
+        <div class="shell site-header-inner">
+          <a class="site-logo" href="/">Game Tools</a>
+          <a class="account-btn" href="/account.html">Login / Account</a>
+        </div>
+      </header>
+      `
+    );
+
+    loadPartial(
+      'site-footer',
+      'partials/footer.html',
+      `
+      <footer class="site-footer">
+        <div class="shell site-footer-inner">
+          <p>© 2026 Game Tools</p>
+          <nav class="footer-nav" aria-label="Footer links">
+            <a href="/">Home</a>
+            <a href="#updates">Updates</a>
+            <a href="#tools-grid">Tools</a>
+          </nav>
+        </div>
+      </footer>
+      `
+    );
+
+    const slides = Array.from(document.querySelectorAll('.update-slide'));
+    const prevBtn = document.getElementById('updates-prev');
+    const nextBtn = document.getElementById('updates-next');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('is-active', i === index);
+      });
+    }
+
+    function goToSlide(direction) {
+      currentSlide = (currentSlide + direction + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    prevBtn?.addEventListener('click', () => goToSlide(-1));
+    nextBtn?.addEventListener('click', () => goToSlide(1));
+
+    setInterval(() => {
+      goToSlide(1);
+    }, 5000);
+  </script>
+</body>
+</html>
